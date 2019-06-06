@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<h1 style="">ОЧКИ</h1>
+<h1 class="point" style="">100</h1>
+
+	<div class="card1" style="background-image: url(img/Antilop.jpg); height: 200px; width: 300px; margin-left: 1050px; margin-top: 350px; position: absolute; background-size: 100% 100%;"></div>
+	<div class="card2" style="background-image: url(img/begemot.jpg); height: 200px; width: 300px; margin-left: 740px; margin-top: 350px; position: absolute; background-size: 100% 100%;  "></div>
+	<div class="card3" style="background-image: url(img/elephant.jpg); height: 200px; width: 300px; margin-left: 1050px; background-size: 100% 100%;   position: absolute; "></div>
+	<div class="col-4 card4" style="background-image: url(img/giena.jpg); height: 200px; width: 300px; margin-left: 430px; margin-top: 350px; background-size: 100% 100%;  position: absolute; ">
+	</div>
+	<div class="col-4 card6" style="background-image: url(img/korova.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; margin-top: 350px; margin-left: 120px"></div>
+	<div class="col-4 card7" style="background-image: url(img/lion.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute; margin-left: 120px;">
+	</div>
+	<div class="col-4 card8" style="background-image: url(img/nosorog.jpg); height: 200px; width: 300px; background-size: 100% 100%;  position: absolute; margin-left: 430px;"></div>
+	<div class="col-4 card9" style="background-image: url(img/zebra.jpg); height: 200px; width: 300px; margin-left: 740px; margin-top: 150px background-size: 100% 100%;  position: absolute; "></div>
+
+
+<div class="vopros" style="display: none">
+	
+	<h2 style="">Где спрятан ...?</h2>
+</div> 
+
+
+
+
+
+<script>  
+
+
+
+
+
+
+
+
+ 
+let point = 100; 
+
+
+let goreshit = function(){  
+		point = point - 100 
+	document.querySelector('.point').innerHTML = point;  
+
+} 
+document.querySelector('.card1').onclick = function(){   
+point = point - 100
+document.querySelector('.point').innerHTML = point;  
+document.querySelector('.card1').style.backgroundImage = "url(img/Antilop.jpg)"; 
+document.querySelector('.card1').style.backgroundSize = "100% 100%" 
+
+document.querySelector('.card2').onclick = function(){   
+point = point - 100 
+document.querySelector('.point').innerHTML = point;  
+document.querySelector('.card2').style.backgroundImage = "url(img/begemot.jpg)"; 
+document.querySelector('.card2').style.backgroundSize = "100% 100%"   
+}
+document.querySelector('.card4').onclick = function(){   
+point = point - 100 
+document.querySelector('.point').innerHTML = point;  
+document.querySelector('.card4').style.backgroundImage = "url(img/giena.jpg)"; 
+document.querySelector('.card4').style.backgroundSize = "100% 100%" 
+}  
+document.querySelector('.card6').onclick = function(){  
+point = point - 100  
+document.querySelector('.point').innerHTML = point;  
+document.querySelector('.card6').style.backgroundImage = "url(img/korova.jpg)"; 
+document.querySelector('.card6').style.backgroundSize = "100% 100%" 
+}  
+document.querySelector('.card7').onclick = function(){  
+point = point - 100  
+document.querySelector('.point').innerHTML = point;  
+document.querySelector('.card7').style.backgroundImage = "url(img/lion.jpg)"; 
+document.querySelector('.card7').style.backgroundSize = "100% 100%"  
+}  
+document.querySelector('.card8').onclick = function(){   
+point = point - 100 
+document.querySelector('.point').innerHTML = point;  
+document.querySelector('.card8').style.backgroundImage = "url(img/nosorog.jpg)"; 
+document.querySelector('.card8').style.backgroundSize = "100% 100%" 
+}  
+document.querySelector('.card9').onclick = function(){  
+point = point - 100  
+document.querySelector('.point').innerHTML = point;  
+document.querySelector('.card9').style.backgroundImage = "url(img/zebra.jpg)"; 
+document.querySelector('.card9').style.backgroundSize = "100% 100%" 
+}  
+document.querySelector('.card3').onclick = function(){  
+point = point + 100  
+document.querySelector('.point').innerHTML = point;  
+document.querySelector('.card3').style.backgroundImage = "url(img/elephant.jpg)"; 
+document.querySelector('.card3').style.backgroundSize = "100% 100%"  
+alert('Ты нашёл слоника') 
+
+
+} 
+
+ 
+}    
+
+
+document.querySelector('.card2').onclick = goreshit; 
+document.querySelector('.card4').onclick = goreshit; 
+document.querySelector('.card6').onclick = goreshit; 
+document.querySelector('.card7').onclick = goreshit; 
+document.querySelector('.card8').onclick = goreshit;  
+document.querySelector('.card9').onclick = goreshit;  
+
+
+
+
+
+
+
+
+
+
+let wellk = function(){  
+		point = point + 100 
+	document.querySelector('.point').innerHTML = point; 
+} 
+
+
+
+
+
+document.querySelector('.card3').onclick = wellk;
+
+let YaDebil = function() { 
+		alert('Запомните местоположение обьектов')   
+	} 
+ 	setTimeout(YaDebil, 1000); 
+
+let first = function() { 
+	document.querySelector('.card1').style.background = "black";  
+	document.querySelector('.card2').style.background = "black"; 
+	document.querySelector('.card3').style.background = "black"; 
+	document.querySelector('.card4').style.background = "black"; 
+
+	document.querySelector('.card6').style.background = "black";
+	document.querySelector('.card7').style.background = "black"; 
+	document.querySelector('.card8').style.background = "black"; 
+	document.querySelector('.card9').style.background = "black";
+	} 
+ 	setTimeout(first, 5000); 
+
+ let second = function() {  
+	alert('Видете здесь слона? И я не вижу.. А он есть.')   
+ 	}  
+ 	setTimeout(second, 5500);
+
+
+
+
+
+</script>	
+</body>
+</html> 
+
+
+
+
+
